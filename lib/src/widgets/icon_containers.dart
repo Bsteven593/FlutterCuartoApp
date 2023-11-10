@@ -11,9 +11,9 @@ class IconContainers extends StatelessWidget {
     return Container(
       child: CircleAvatar(
         radius: 100.0,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Color.fromARGB(255, 183, 171, 58),
         backgroundImage: AssetImage(this.url),
       ),
     );
-  }
+  }       
 }

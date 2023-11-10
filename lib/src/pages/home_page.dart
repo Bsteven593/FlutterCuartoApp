@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegar/src/pages/sing_up.dart';
 import 'package:navegar/src/widgets/icon_containers.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -64,7 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 60.0,
                 height: 60.0,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    final route = MaterialPageRoute(builder: ((context)=>SingUp());
+                    navigator.push(context, route);),
+                  },
                   child: Text(
                     "SING IN",
                     style: TextStyle(

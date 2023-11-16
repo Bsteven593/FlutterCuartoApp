@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:navegar/src/widgets/icon_containers.dart';
 
+import '../widgets/register_form.dart';
+
 class SingUp extends StatefulWidget {
   const SingUp({super.key});
 
@@ -47,6 +49,7 @@ class _SingUpState extends State<SingUp> {
               Divider(
                 height: 30.0,
               ),
+              Register()
             ],
           ),
         ),

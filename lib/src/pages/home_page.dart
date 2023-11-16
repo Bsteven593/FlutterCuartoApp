@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegar/src/pages/sing_in.dart';
 import 'package:navegar/src/pages/sing_up.dart';
 import 'package:navegar/src/widgets/icon_containers.dart';
 
@@ -48,7 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 60.0,
                 height: 60.0,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    final route =
+                        MaterialPageRoute(builder: (context) => SingUp());
+                    Navigator.push(context, route);
+                  },
                   child: Text(
                     "SING UP",
                     style: TextStyle(
@@ -66,8 +71,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 60.0,
                 child: ElevatedButton(
                   onPressed: () {
-                    final route = MaterialPageRoute(builder: ((context)=>SingUp());
-                    navigator.push(context, route);),
+                    final route =
+                        MaterialPageRoute(builder: (context) => SingIn());
+                    Navigator.push(context, route);
                   },
                   child: Text(
                     "SING IN",

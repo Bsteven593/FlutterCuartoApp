@@ -8,11 +8,11 @@ class MenuLateral extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pagina Principal'),
-        backgroundColor: Color.fromARGB(198, 111, 85, 34),
+        backgroundColor: Color.fromARGB(197, 176, 121, 12),
       ),
       body: Center(
         child: Center(
-          child: Text('Contenedor del proyecto'),
+          child: Text('menu unido a proyecto'),
         ),
       ),
       drawer: Drawer(
@@ -30,13 +30,16 @@ class MenuLateral extends StatelessWidget {
                   foregroundImage: AssetImage('images/cora.jpg'),
                 )
               ],
-              decoration: BoxDecoration(color: Color.fromARGB(34, 13, 64, 75)),
+              decoration:
+                  BoxDecoration(color: Color.fromARGB(214, 103, 64, 75)),
             ),
             Padding(
               padding: EdgeInsets.all(14.0),
               child: Text('etiquetas 1'),
             ),
-            ListTile(leading: Icon(Icons.home), title: Text('Opcion 1')),
+            ListTile(
+                leading: Icon(Icons.temple_hindu_rounded),
+                title: Text('Opcion 1')),
             ListTile(
                 leading: Icon(Icons.access_alarm), title: Text('Opcion 2')),
             ListTile(
@@ -61,9 +64,9 @@ class MenuLateral extends StatelessWidget {
                 leading: Icon(Icons.recommend_rounded),
                 title: Text('Opcion 1')),
             ListTile(
-                leading: Icon(Icons.taxi_alert_sharp), title: Text('Opcion 2')),
+                leading: Icon(Icons.add_home_sharp), title: Text('Opcion 2')),
             ListTile(
-                leading: Icon(Icons.zoom_out_rounded), title: Text('Opcion 3')),
+                leading: Icon(Icons.moped_rounded), title: Text('Opcion 3')),
           ],
         ),
       ),

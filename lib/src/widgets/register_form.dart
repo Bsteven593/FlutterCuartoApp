@@ -37,7 +37,7 @@ class _RegisterState extends State<Register> {
               hint: "Apellido",
               label: "Apellido",
               obsecure: false,
-              icono: Icon(Icons.lock_clock),
+              icono: Icon(Icons.access_alarms),
               onChanged: (data) {
                 _apellido = data!;
               },

@@ -20,33 +20,36 @@ class _MyHomePageState extends State<MyHomePage> {
           height: double.infinity,
           decoration: BoxDecoration(
               gradient: LinearGradient(colors: <Color>[
-            Color.fromARGB(255, 224, 131, 77),
-            Color.fromARGB(21, 228, 201, 23)
+            Color.fromARGB(120, 255, 0, 0),
+            Color.fromARGB(0, 194, 23, 228)
           ], begin: Alignment.topCenter)),
           child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 200),
             children: <Widget>[
               //!Aqui se ubica el URL de una imagen
-              IconContainers(url: "images/cora.jpg"),
+              const IconContainers(url: "images/cora.jpg"),
               Text(
                 "Bienvenidos a mi curso",
                 style: TextStyle(
-                  fontFamily: "PermanentMarKer",
+                  fontFamily: "PermamentMarker",
                   fontSize: 30.0,
                 ),
               ),
               Divider(
-                height: 30.0,
+                height: 20.0,
               ),
               Text(
                 "Ejercicio N.-003",
                 style: TextStyle(
-                  fontFamily: "PermanentMarKer",
-                  fontSize: 40.0,
+                  fontFamily: "PermamentMarker",
+                  fontSize: 30.0,
                 ),
               ),
+              Divider(
+                height: 20.0,
+              ),
               SizedBox(
-                width: 60.0,
+                width: 300.0,
                 height: 60.0,
                 child: ElevatedButton(
                   onPressed: () {
@@ -55,19 +58,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     Navigator.push(context, route);
                   },
                   child: Text(
-                    "SING UP",
+                    "Sing Up",
                     style: TextStyle(
-                        color: Colors.orange,
-                        fontFamily: "FredokaOne",
-                        fontSize: 30.0),
+                      color: Colors.black26,
+                      fontFamily: "FreedokaOne",
+                      fontSize: 30.0,
+                    ),
                   ),
                 ),
               ),
               Divider(
-                height: 30.0,
+                height: 20.0,
               ),
               SizedBox(
-                width: 60.0,
+                width: 300.0,
                 height: 60.0,
                 child: ElevatedButton(
                   onPressed: () {
@@ -76,11 +80,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     Navigator.push(context, route);
                   },
                   child: Text(
-                    "SING IN",
+                    "Sing in",
                     style: TextStyle(
-                        color: Colors.orange,
-                        fontFamily: "FredokaOne",
-                        fontSize: 30.0),
+                      color: Colors.black26,
+                      fontFamily: "FreedokaOne",
+                      fontSize: 30.0,
+                    ),
                   ),
                 ),
               )
